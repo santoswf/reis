@@ -1,0 +1,140 @@
+@media screen and (min-width: 1420px) and (max-width: 1550px) {
+  .box-cards {
+    width: 330px;
+  }
+  .box-cards p {
+    font-size: 15px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .box-cards {
+    width: 300px;
+  }
+  .box-cards p {
+    font-size: 15px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box-cards {
+    width: 280px;
+  }
+  .box-cards p {
+    font-size: 14px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1140px)  {
+  .box-cards {
+    width: 260px;
+  }
+  .box-cards p {
+    font-size: 13px;
+  }
+  .number p {
+    font-size: 38px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .line {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container-cards-beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-cards {
+    width: 350px;
+    margin-bottom: 7%;
+  }
+  .box-cards p {
+    font-size: 18px;
+  }
+  .number p {
+    font-size: 50px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .container-teams1 {
+    flex-direction: column;
+  }
+  #third-page {
+    height: auto;
+  }
+  .cards-team {
+    margin-bottom: 7%;
+    width: auto;
+    height: 330px;
+    flex-direction: column;
+  }
+  .cards-team p {
+    font-size: 11px;
+  }
+  .img-team img {
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+
+    object-fit: cover;
+  }
+  .txt-team h3 {
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .first-page {
+    background-image: url(imgs/first-page-720.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 100%;
+    padding-top: 35%;
+  }
+  .txt-first-page {
+    position: relative;
+    bottom: 100px;
+    right: 30px;
+  }
+  .txt-first-page h1{
+    font-size: 2.5em;
+  }
+  .txt-first-page p{
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .first-page {
+    background-image: url(imgs/first-page-500.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .txt-first-page h1{
+    font-size: 2em;
+  }
+  .txt-first-page p{
+    font-size: 0.7em;
+  }
+}
