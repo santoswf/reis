@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*, a, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Oswald", serif;
+}
+
+:root {
+  --principal: #9AE000;
+  --titulos: "Bebas Neue", serif;
+  --fundo: #0F0F0F;
+}
+
+/* START HOVER EFECTS*/
+.menu li a:hover {
+  transform: scale(1.1);
+  color: var(--principal);
+}
+
+#header.scrolled {
+  background: black;
+  color: #fff;
+} 
+
+/* END HOVER EFCTS */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 253, 253, 0.3);
+
+  transition: 1.8s ease-in-out;
+}
+
+nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+
+.menu li a {
+  color: rgb(62, 62, 62);
+  display: inline-block;
+  transition: 1s ease;
+}
+
+.first-page {
+  height: 980px;
+  background-image: url(imgs/Design\ sem\ nome\ \(4\).jpg);
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+
+.btn-social button {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: var(--principal);
+  color: black;
+}
+
+#logo {
+  height: 60px;
+  object-fit: cover;
+}
+
+.txt-first-page {
+  margin-left: 10%;
+  margin-bottom: 5%;  
+  color: white;
+}
+
+.txt-first-page h1 {
+  font-size: 5em;
+}
+
+
+.txt-first-page p {
+  padding: 8px;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.first-page .btn-social {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.second-page {
+  background: #141414;
+  height: 980px;
+  padding-top: 10%;
+}
+
+.second-page-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-page .img-box img {
+  height: 700px;
+  margin-top: 4%;
+}
+
+.txt-consultoria {
+  color: white;
+  width: 500px;
+  margin-top: 8%;
+}
+
+.txt-consultoria h2 {
+  color: white;
+  font-family: var(--titulos);
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.txt-consultoria p {
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.cta {
+  height: 300px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(47,45,45,1) 50%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.txt-box {
+  color: white;
+}
+
+.cta .img-logo img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.cta .txt-box h2 {
+  font-size: 2em;
+  line-height: 40px;
+  font-family: var(--titulos);
+  letter-spacing: 1px;
+}
+
+.cta .txt-box {
+  margin-bottom: 20px;
+}
+
+.button-cta button {
+  width: 630px;
+  padding: 10px;
+  text-align: left;
+  background: white;
+}
+
+.button-cta a {
+  color: black;
+}
+
+#third-page {
+  height: 700px;
+}
+
+#third-page p {
+  text-align: center;
+}
+
+#third-page h1 {
+  font-size: 4.2em;
+  font-family: var(--titulos);
+
+  margin-top: 2%;
+  text-align: center;
+}
+
+.cards-team {
+  border: 1px solid black;
+  width: 700px;
+  height: 200px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+}
+
+.container-teams1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8%;
+}
+
+.img-team img {
+  height: 120px;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.txt-team p {
+  font-size: 12px;
+  margin: 14px;
+  text-align: justify;
+  color: #5C5C5C;
+}
+
+
+.txt-team h3 {
+  margin-left: 14px;
+  color: #2C2C2C;
+}
+
+.container-teams2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#fourth-page {
+  background-color: var(--fundo);
+  color: white;
+}
+
+.box-cards {
+  background: white;
+  width: 380px;
+  height: 400px;
+
+  border-radius: 25px;
+}
+
+.container-cards-beneficios {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+#fourth-page h4 {
+  font-family: var(--titulos);
+  font-size: 5em;
+  text-align: center;
+  margin-top: 8%;
+  padding-top: 35px;
+
+  color: #9AE000;
+}
+
+
+#fourth-page h5 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.emphasis {
+  color: var(--principal);
+  font-family: var(--titulos);
+}
+
+.box-cards p {
+  color: #656464;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.box-cards h3 {
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.number p {
+  color: black;
+  font-family: var(--titulos);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.line {
+  background: #BBF737;
+  width: 250px;
+  height: 4px;
+  display: flex;
+  margin: auto;
+}
+
+#fifth-page {
+  background: var(--fundo);
+}
+
+.mx-auto {
+  margin-top: 10%;
+}
+
+.mb-10 {
+  margin-right: 10%;
+}
+
+.color-text {
+  text-align: center;
+  font-family: var(--titulos);
+  font-size: 4em;
+}
+
+.btn-social2 {
+  background: var(--principal);
+  border-radius: 4px;
+  font-size: 1.2em;
+}
+
+footer {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(12, 12, 12) 50%, rgba(0,0,0,1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+.logo-footer img{
+  height: 80px;
+  object-fit: cover;
+}
+
+.logo-footer p {
+  color: white;
+  margin-top: 14px;
+  font-weight: 200;
+}
+
+.links-footer {
+  color: white;
+}
+
+.links-footer h4 {
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.links-footer a {
+  font-size: 18px;
+  padding: 6px;
+}
+
+.box-icons {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(12, 12, 12) 50%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location i {
+  margin-right: 8px;
+  font-size: 28px;
+}
+
+
+.location p {
+  font-size: 14px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone i {
+  margin-right: 8px;
+  font-size: 28px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.mail i {
+  margin-right: 8px;
+  font-size: 28px;
+}
+
+.rights {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(12, 12, 12) 50%, rgba(0,0,0,1) 100%);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+/* START RESPONSIVIDADE */
+
+@media screen and (min-width: 1420px) and (max-width: 1550px) {
+  .box-cards {
+    width: 330px;
+  }
+  .box-cards p {
+    font-size: 15px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .box-cards {
+    width: 300px;
+  }
+  .box-cards p {
+    font-size: 15px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box-cards {
+    width: 280px;
+  }
+  .box-cards p {
+    font-size: 14px;
+  }
+  .number p {
+    font-size: 40px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1140px)  {
+  .box-cards {
+    width: 260px;
+  }
+  .box-cards p {
+    font-size: 13px;
+  }
+  .number p {
+    font-size: 38px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .line {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container-cards-beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-cards {
+    width: 350px;
+    margin-bottom: 7%;
+  }
+  .box-cards p {
+    font-size: 18px;
+  }
+  .number p {
+    font-size: 50px;
+  }
+  .box-cards h3 {
+    font-size: 20px;
+  }
+  .container-teams1 {
+    flex-direction: column;
+  }
+  #third-page {
+    height: auto;
+  }
+  .cards-team {
+    margin-bottom: 7%;
+  }
+}
+/* END RESPOSIVIDADE */
