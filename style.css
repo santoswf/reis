@@ -31,6 +31,7 @@
 
 header {
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 90px;
   display: flex;
@@ -38,7 +39,7 @@ header {
   align-items: center;
   border-bottom: 1px solid rgba(255, 253, 253, 0.3);
 
-  transition: 1.8s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 nav {
@@ -52,6 +53,7 @@ nav {
 
 .menu li {
   margin: 20px;
+  transition: 2s ease;
 }
 
 
@@ -61,7 +63,7 @@ nav {
   transition: 1s ease;
 }
 
-.first-page {
+#first-page {
   height: 980px;
   background-image: url(imgs/Design\ sem\ nome\ \(4\).jpg);
   object-fit: cover;
@@ -100,7 +102,7 @@ nav {
   text-align: justify;
 }
 
-.first-page .btn-social {
+#first-page .btn-social {
   margin-left: 8px;
   margin-top: 5px;
 }
@@ -144,7 +146,8 @@ nav {
 
 .cta {
   height: 300px;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(47,45,45,1) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(27, 26, 26) 50%, rgba(0,0,0,1) 100%);
+  background-size: cover;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -353,16 +356,21 @@ footer {
 
 .links-footer {
   color: white;
+  padding: 70px;
 }
 
 .links-footer h4 {
   margin-bottom: 16px;
   font-size: 22px;
+  color: var(--principal);
 }
 
 .links-footer a {
   font-size: 18px;
   padding: 6px;
+}
+.box-links-footer {
+  display: flex;
 }
 
 .box-icons {
@@ -423,6 +431,8 @@ footer {
   background: none;
   border-top: 3px solid #fff;
   cursor: pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .hamburguer::before,
@@ -433,6 +443,32 @@ footer {
   height: 3px;
   background: #fff;
   margin-top: 5px;
-  position: relative;
   transition: 0.3s;
 }
+
+.icon {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  font-size: 30px;
+  background: #01e675;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 54px;
+  height: 54px;
+  tex-align: center;
+  text-decoration: none;
+  z-index: 100;;
+  box-shadow: 2px 2px 2px #c0bdbd;
+  }
+  .icon i {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .icon:hover {
+  background: #fff;
+  color: #029e3b;
+  font-weight: 900;
+  box-shadow: 2px 2px 20px #5fe690;
+  }
