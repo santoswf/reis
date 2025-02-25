@@ -8,15 +8,17 @@ if (nav && hamburguer) {
   hamburguer.addEventListener("click", function () {
     nav.classList.toggle("active"); // Adiciona/remove a classe "active"
   });
-} else {
-  console.error("Erro: Elementos não encontrados. Verifique a estrutura do HTML.");
-}
+} 
 
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+const menuLinks = document.querySelectorAll('.menu a[href^="#"], .button-arrow a[href^="#"');
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
 }
+
+// const arrowLink = document.querySelector('.button-arrow [href^="#"]')
+
+
 
 // function nativeScroll(distanceFromTheTop) {
 //   window.scroll({

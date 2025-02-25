@@ -66,7 +66,7 @@
     width: 200px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 700px) {
   .container-cards-beneficios {
     flex-direction: column;
     align-items: center;
@@ -98,6 +98,7 @@
   }
   .cards-team p {
     font-size: 14px;
+    text-align: center;
   }
   .img-team img {
     height: 150px;
@@ -133,11 +134,8 @@
 }
 
 @media screen and (max-width: 700px){
-  .first-page {
-    /* background-image: url(imgs/first-page-500.jpg); */
-    width: 100%;
-    background-repeat: no-repeat;
-    object-fit: cover;
+  #first-page {
+    height: 650px;
   }
   .txt-first-page {
     margin-top: 4%;
@@ -169,11 +167,6 @@
   .cta {
     width: 100%;
     align-items: center;
-    background-image: url(imgs/fundo-cta3.jfif);
-    object-fit: cover;
-    background-position: left bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   .cta .txt-box h2 {
     font-size: 30px;

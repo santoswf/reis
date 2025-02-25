@@ -40,6 +40,7 @@ header {
   border-bottom: 1px solid rgba(255, 253, 253, 0.3);
 
   transition: 1s ease-in-out;
+  backdrop-filter: blur(8px);
 }
 
 nav {
@@ -167,6 +168,7 @@ nav {
   line-height: 40px;
   font-family: var(--titulos);
   letter-spacing: 1px;
+  width: 480px;
 }
 
 .cta .txt-box {
@@ -188,7 +190,7 @@ nav {
   height: 700px;
 }
 
-#third-page p {
+.center {
   text-align: center;
 }
 
@@ -225,8 +227,9 @@ nav {
 .txt-team p {
   font-size: 12px;
   margin: 14px;
-  text-align: justify;
+  text-align: left;
   color: #5C5C5C;
+  width: 450px;
 }
 
 
@@ -315,6 +318,30 @@ nav {
   background: var(--fundo);
 }
 
+.bg-black {
+  background: var(--fundo);
+}
+
+.bg-black h5 {
+  color: white;
+  font-weight: 300;
+}
+
+.mail2 i {
+  font-size: 30px;
+  color: var(--principal);
+}
+
+.phone2 i {
+  font-size: 30px;
+  color: var(--principal);
+}
+
+.location2 i {
+  font-size: 30px;
+  color: var(--principal);
+}
+
 .mx-auto {
   margin-top: 10%;
 }
@@ -379,6 +406,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   color: white;
+  font-weight: 300;
 }
 
 .location {
@@ -423,6 +451,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 18px;
+  font-weight: 300;
 }
 
 .hamburguer {
@@ -450,25 +479,61 @@ footer {
   position: fixed;
   bottom: 60px;
   right: 30px;
-  font-size: 30px;
+  font-size: 28px;
   background: #01e675;
   color: #ffffff;
   border-radius: 50%;
   padding: 3px;
   width: 54px;
   height: 54px;
-  tex-align: center;
   text-decoration: none;
-  z-index: 100;;
-  box-shadow: 2px 2px 2px #c0bdbd;
+  z-index: 100;
   }
+
   .icon i {
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 14px;
+    font-size: 23px;
+    margin-bottom: 40px;
   }
+  
   .icon:hover {
   background: #fff;
   color: #029e3b;
   font-weight: 900;
   box-shadow: 2px 2px 20px #5fe690;
+  }
+
+  
+.icon-arrow {
+  opacity: 0;
+  position: fixed;
+  bottom: 135px;
+  right: 30px;
+  font-size: 30px;
+  border: 1px solid white;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 3px;
+  width: 54px;
+  height: 54px;
+  text-decoration: none;
+  z-index: 100;
+  transition: 1s;
+  }
+
+  .icon-arrow i {
+    margin-left: 9px;
+    margin-bottom: 10px;
+  }
+
+  .icon:hover {
+  background: #fff;
+  color: #029e3b;
+  font-weight: 900;
+  box-shadow: 2px 2px 20px #5fe690;
+  }
+
+  .button-arrow .display{
+    opacity: 1;
+    transition: 2s;
   }
