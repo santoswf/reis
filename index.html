@@ -26,7 +26,7 @@
         </ul>
       </nav>
       <div class="btn-social none">
-        <button><a href="#">Fale com um especialista</a></button>
+        <button none><a href="#">Fale com um especialista</a></button>
       </div>
     </header>
     <section id="first-page">
@@ -180,7 +180,7 @@
                 <div class="lg:mb-0 mb-10">
                     <div class="group w-full h-full">
                         <div class="relative h-full">
-                            <img src="https://pagedone.io/asset/uploads/1696488602.png" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
+                            <img src="imgs/ampulheta.png" alt="ContactUs tailwind section" class="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
                             <div class="absolute bottom-0 w-full lg:p-11 p-5">
                                 <div class="bg-black rounded-lg p-6 block">
                                     <a href="javascript:;" class="flex items-center mb-6">
@@ -203,11 +203,21 @@
     
                 <div class="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
                     <h2 class="color-text leading-10 mb-11">ENTRE EM CONTATO</h2>
-                    <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Nome">
-                    <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Email">
-                    <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Número">
-                    <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Assunto">
-                    <button class="btn-social2 w-full h-12 leading-6 ">Enviar</button>
+                    <form action="https://formsubmit.co/mateussantosferreira.pp@gmail.com"
+                    method="POST"
+                    data-form id="contactForm">
+                      <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Nome" name="Digite seu nome" id="nome" required>
+
+                      <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Digite seu Email" name="email" id="email" required>
+
+                      <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Digite seu número" name="number" id="number">
+
+                      <input type="text" class="w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-gray-200 focus:outline-none pl-4 mb-10" placeholder="Assunto"  name="menssage" required>
+                      <span class="error-message" id="messageError"></span>
+                      <button class="btn-social2 w-full h-12 leading-6" id="button" type="submit" data-button>Enviar</button>
+                      
+
+                    </form>
             </div>
           </div>
         </section>
@@ -218,21 +228,23 @@
       <div class="logo-footer">
         <img src="imgs/logo-reis-e-ramalho-horizontal.png">
         <p>Reis & Ramalho Consultoria Comercial - Estratégia e <br> Resultados para o crescimento do seu negócio.</p>
+        <a href=""><i class="bi bi-instagram inst"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=16982142864" target="_blank"><i class="bi bi-whatsapp whats"></i></a>
       </div>
       <div class="box-links-footer">
         <div class="links-footer">
           <ul>
             <h4>Navegação</h4>
-            <li><a href="#">Home</a></li>
+            <li><a href="#first-page">Home</a></li>
             <li><a href="#">Consultoria</a></li>
-            <li><a href="#">Benefícios</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#fourth-page">Benefícios</a></li>
+            <li><a href="#fifth-page">Contato</a></li>
           </ul>
         </div>
         <div class="links-footer">
           <ul>
             <h4>Links rápidos</h4>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#fifth-page">Contact Us</a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Booking</a></li>
             <li><a href="#">pages</a></li>
@@ -241,7 +253,7 @@
         <div class="links-footer">
           <ul>
             <h4>Services</h4>
-            <li><a href="#">Home</a></li>
+            <li><a href="#first-page">Home</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">404</a></li>
@@ -267,15 +279,14 @@
       <p>©2023 - 2025 Reis & Ramalho Consultoria - Todos os direitos reservados</p>
     </div>
     <div class="button-zap">
-      <a href="https://api.whatsapp.com/send?phone=1629981298983198" class="icon" target="_blank"><i class="bi bi-whatsapp"></i></a>
-    </div>
-    <div class="button-arrow">
-      <a href="#first-page" class="icon-arrow"><i class="bi bi-arrow-up"></i></a>
-    </div>    
+      <a href="https://api.whatsapp.com/send?phone=16982142864" class="icon" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>   
     <script src="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/js/pagedone.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scroll.js"></script>
     <script src="app.js"></script>
+    <script src="validation-form.js"></script>
+    <script src="contact.js"></script>
     <script>
       AOS.init();
     </script>
